@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle</title>
+    <style>
+        canvas{
+            border: 2px solid rgb(59, 177, 5);
+            margin: 100px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="500" height="500" id="can"></canvas>
+    <script>
+        var ctx = document.getElementById("can").getContext("2d");
+        ctx.beginPath();
+             ctx.fillRect(0,0,500,50);
+            ctx.fillRect(0,50,500,500);
+             //ctx.fillRect(0,0,500,50);
+             //ctx.fillRect(0,0,500,50);
+             
+
+             ctx.strokeStyle = "white";
+             ctx.fillStyle = "brown";
+             for(var i =10; i <=490; i+=10){
+                ctx.moveTo(i,10);
+                ctx.lineTo(490,i);
+             }
+             for(var i =10; i <=490; i+=10){
+                ctx.moveTo(10,i);
+                ctx.lineTo(i,490);
+             }
+             //ctx.stroke();
+             ctx.fill();
+             ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(125,125,75,0,(Math.PI/180)*360);
+            ctx.fillStyle = "orange";
+            ctx.strokeStyle = "orange";
+            ctx.fill();
+            ctx.stroke();
+            //ctx.fill();
+
+            // ctx.beginPath();
+            // ctx.arc(375,125,75,0,(Math.PI/180)*360);
+            // ctx.fillStyle = "green";
+            // ctx.strokeStyle = "red";
+            // ctx.fill();
+            // ctx.stroke();
+            // //ctx.fill();
+
+            // ctx.beginPath();
+            // ctx.arc(125,375,75,0,(Math.PI/180)*360);
+            // ctx.fillStyle = "green";
+            // ctx.strokeStyle = "red";
+            // ctx.fill();
+            // ctx.stroke();
+            // //ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(375,375,75,0,(Math.PI/180)*360);
+            ctx.fillStyle = "green";
+            ctx.strokeStyle = "green";
+            ctx.fill();
+            ctx.stroke();
+            //ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(250,250,75,0,(Math.PI/180)*360);
+            ctx.fillStyle = "white";
+            ctx.strokeStyle = "white";
+            ctx.fill();
+            ctx.stroke();
+
+            // ctx.beginPath();
+            // ctx.arc(250,250,25,0,(Math.PI/180)*360);
+            // ctx.fillStyle = "blue";
+            // ctx.strokeStyle = "white";
+            // ctx.fill();
+            // ctx.stroke();
+            // //ctx.fill();
+           
+    </script>
+</body>
+</html>

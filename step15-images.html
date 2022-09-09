@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas image</title>
+    <style>
+        canvas{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="600" height="600" id="can"></canvas>
+    <script>
+        var ctx =document.getElementById("can").getContext("2d");
+        var img1 = new Image();
+            img1.src = "image/scarletwitch.jpg";
+            img1.onload = function(){
+                //ctx.rotate((Math.PI/100)*45);
+                ctx.drawImage(img1,0,0);
+            }
+        var img2 = new Image();
+            img2.src = "image/wonderwoman.jpg";
+            img2.onload = function(){
+                //ctx.rotate((Math.PI/100)*45);
+                ctx.drawImage(img2,300,300);
+            }
+        var img3 = new Image();
+            img3.src = "image/blackwidow.jpg";
+            img3.onload = function(){
+                //ctx.rotate((Math.PI/100)*45);
+                ctx.drawImage(img3,0,300);
+            }
+        var img4 = new Image();
+            img4.src = "image/captainmarvel.jpg";
+            img4.onload = function(){
+                //ctx.rotate((Math.PI/100)*45);
+                ctx.drawImage(img4,300,2);
+            }
+    </script>
+</body>
+</html>
