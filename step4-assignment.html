@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function changebckcolor(source){
+    document.getElementById("box").style.background=source.value;
+    }
+    function changetextcolor(source){
+    document.getElementById("box").style.color=source.value;
+    }
+
+</script>
+<body>
+    <label for=""> Background colour: &nbsp;
+        <input type="color" oninput="changebckcolor(this)">
+        
+    </label>
+    <br>
+    <label for="" > Font colour: &nbsp;
+        <input type="color" oninput="changetextcolor(this)">
+    </label>
+    <div class ="container" id="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi saepe est molestiae sint iure ratione omnis fugit officiis nulla, voluptatum suscipit qui maxime quo quisquam quos rerum distinctio id neque!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nisi libero ut cum quam. Iste impedit vitae amet eius officia animi reprehenderit distinctio dolores! Minima nihil sit animi aliquid dolorum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit officiis ut quidem eveniet, facere consequatur? Omnis eaque praesentium consequuntur nam officiis minus maiores corporis veniam. Dolor soluta eum atque quod.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias iusto fugiat, itaque laborum iure cumque? Quaerat facere earum aut quia ea ipsa, eos, officiis, accusantium quisquam tempora quo rem consequuntur?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quidem, et aspernatur repudiandae officia voluptatum, molestiae voluptatibus quibusdam, pariatur modi eius? Debitis tempore aliquam quis molestiae ratione, tempora sit doloremque.
+    </div>
+</body>
+</html>
